@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1.
+    Comic Book Collection
+  ul
+    each comic, i in comicsList
+      li= comic.bookTitle + " " + comic.seriesTitle
+        //a(href="mailto:#{comic.bookTitle}")= comic.bookTitle
