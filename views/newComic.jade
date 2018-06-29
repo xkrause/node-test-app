@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  form#formAddComic(name="addComic",method="post",action="/newComic")
+    input#inputBookNum(type="text", placeholder="Book Number", name="bookNum")
+    input#inputBookTitle(type="text", placeholder="Book Title", name="bookTitle")
+    input#inputSeriesTitle(type="text", placeholder="Series Title", name="seriesTitle")
+    input#inputIssueNum(type="text", placeholder="Issue Number", name="issueNum")
+    input#inputReleaseDate(type="text", placeholder="Release Date", name="releaseDate")
+    input#inputFormat(type="text", placeholder="Format (Single Issue/Trade Paperback)", name="format")
+    input#inputSigned(type="text", placeholder="Signed?", name="signed")
+    input#inputGraded(type="text", placeholder="Graded?", name="graded")
+    input#inputAuthors(type="text", placeholder="Author(s)", name="authors")
+    input#inputPenciler(type="text", placeholder="Penciler(s)", name="penciler")
+    input#inputInker(type="text", placeholder="Inker(s)", name="inker")
+    input#inputCoverArtist(type="text", placeholder="Cover Artist(s)", name="coverArtist")
+    input#inputPublisher(type="text", placeholder="Publisher(s)", name="publisher")
+    input#inputNotes(type="text", placeholder="Additional Notes?", name="notes")
+    button#btnSubmit(type="submit") submit
