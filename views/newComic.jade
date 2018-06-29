@@ -2,6 +2,9 @@ extends layout
 
 block content
   h1= title
+  a(href="/") Home <br />
+  a(href="newComic") Add A New Comic Book <br />
+  a(href="comicsList") Comics Database
   form#formAddComic(name="addComic",method="post",action="/newComic")
     input#inputBookNum(type="text", placeholder="Book Number", name="bookNum")
     input#inputBookTitle(type="text", placeholder="Book Title", name="bookTitle")

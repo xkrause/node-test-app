@@ -1,8 +1,10 @@
 extends layout
 
 block content
-  h1.
-    Comic Book Collection
+  h1= "Comic Book Listing"
+  a(href="/") Home <br />
+  a(href="newComic") Add A New Comic Book <br />
+  a(href="comicsList") Comics Database
   ul
     each comic, i in comicsList
       li= comic.bookTitle + " " + comic.seriesTitle
